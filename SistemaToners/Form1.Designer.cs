@@ -46,12 +46,14 @@ namespace SistemaToners
             this.ComboPuesto = new System.Windows.Forms.ComboBox();
             this.LabGestImpre = new System.Windows.Forms.Label();
             this.Gestion = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.LabelNumToner = new System.Windows.Forms.Label();
+            this.LabelCambio = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LabelModeloToner = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.LabelCambio = new System.Windows.Forms.Label();
-            this.LabelNumToner = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tonerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaImpresorasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu.SuspendLayout();
             this.Gestion.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +73,7 @@ namespace SistemaToners
             // 
             // gestionToolStripMenuItem
             // 
+            this.gestionToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
             this.gestionToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.gestionToolStripMenuItem.Text = "Gestion";
@@ -80,7 +83,8 @@ namespace SistemaToners
             this.tonerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarTonerToolStripMenuItem,
             this.nuevoTonerToolStripMenuItem,
-            this.editarTonerToolStripMenuItem});
+            this.editarTonerToolStripMenuItem,
+            this.tonerToolStripMenuItem1});
             this.tonerToolStripMenuItem.Name = "tonerToolStripMenuItem";
             this.tonerToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.tonerToolStripMenuItem.Text = "Toner";
@@ -107,7 +111,8 @@ namespace SistemaToners
             // 
             this.impresoraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevaImpresoraToolStripMenuItem,
-            this.editarImpresoraToolStripMenuItem});
+            this.editarImpresoraToolStripMenuItem,
+            this.listaImpresorasToolStripMenuItem});
             this.impresoraToolStripMenuItem.Name = "impresoraToolStripMenuItem";
             this.impresoraToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.impresoraToolStripMenuItem.Text = "Impresora";
@@ -158,7 +163,7 @@ namespace SistemaToners
             // LabGestPuesto
             // 
             this.LabGestPuesto.AutoSize = true;
-            this.LabGestPuesto.Location = new System.Drawing.Point(3, 53);
+            this.LabGestPuesto.Location = new System.Drawing.Point(3, 43);
             this.LabGestPuesto.Name = "LabGestPuesto";
             this.LabGestPuesto.Size = new System.Drawing.Size(114, 15);
             this.LabGestPuesto.TabIndex = 4;
@@ -167,7 +172,7 @@ namespace SistemaToners
             // ComboPuesto
             // 
             this.ComboPuesto.FormattingEnabled = true;
-            this.ComboPuesto.Location = new System.Drawing.Point(123, 50);
+            this.ComboPuesto.Location = new System.Drawing.Point(123, 40);
             this.ComboPuesto.Name = "ComboPuesto";
             this.ComboPuesto.Size = new System.Drawing.Size(121, 23);
             this.ComboPuesto.TabIndex = 5;
@@ -175,7 +180,7 @@ namespace SistemaToners
             // LabGestImpre
             // 
             this.LabGestImpre.AutoSize = true;
-            this.LabGestImpre.Location = new System.Drawing.Point(3, 91);
+            this.LabGestImpre.Location = new System.Drawing.Point(3, 72);
             this.LabGestImpre.Name = "LabGestImpre";
             this.LabGestImpre.Size = new System.Drawing.Size(96, 15);
             this.LabGestImpre.TabIndex = 6;
@@ -200,6 +205,33 @@ namespace SistemaToners
             this.Gestion.Size = new System.Drawing.Size(265, 411);
             this.Gestion.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 177);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Cambiar Toner";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // LabelNumToner
+            // 
+            this.LabelNumToner.AutoSize = true;
+            this.LabelNumToner.Location = new System.Drawing.Point(3, 154);
+            this.LabelNumToner.Name = "LabelNumToner";
+            this.LabelNumToner.Size = new System.Drawing.Size(124, 15);
+            this.LabelNumToner.TabIndex = 11;
+            this.LabelNumToner.Text = "El toner es el numero: ";
+            // 
+            // LabelCambio
+            // 
+            this.LabelCambio.AutoSize = true;
+            this.LabelCambio.Location = new System.Drawing.Point(3, 130);
+            this.LabelCambio.Name = "LabelCambio";
+            this.LabelCambio.Size = new System.Drawing.Size(123, 15);
+            this.LabelCambio.TabIndex = 10;
+            this.LabelCambio.Text = "El ultimo cambio fue: ";
+            // 
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -213,7 +245,7 @@ namespace SistemaToners
             // LabelModeloToner
             // 
             this.LabelModeloToner.AutoSize = true;
-            this.LabelModeloToner.Location = new System.Drawing.Point(3, 124);
+            this.LabelModeloToner.Location = new System.Drawing.Point(3, 105);
             this.LabelModeloToner.Name = "LabelModeloToner";
             this.LabelModeloToner.Size = new System.Drawing.Size(127, 15);
             this.LabelModeloToner.TabIndex = 8;
@@ -222,37 +254,24 @@ namespace SistemaToners
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(123, 88);
+            this.comboBox1.Location = new System.Drawing.Point(123, 69);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
             this.comboBox1.TabIndex = 7;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // LabelCambio
+            // tonerToolStripMenuItem1
             // 
-            this.LabelCambio.AutoSize = true;
-            this.LabelCambio.Location = new System.Drawing.Point(3, 139);
-            this.LabelCambio.Name = "LabelCambio";
-            this.LabelCambio.Size = new System.Drawing.Size(123, 15);
-            this.LabelCambio.TabIndex = 10;
-            this.LabelCambio.Text = "El ultimo cambio fue: ";
+            this.tonerToolStripMenuItem1.Name = "tonerToolStripMenuItem1";
+            this.tonerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.tonerToolStripMenuItem1.Text = "Lista Toners";
+            this.tonerToolStripMenuItem1.Click += new System.EventHandler(this.tonerToolStripMenuItem1_Click);
             // 
-            // LabelNumToner
+            // listaImpresorasToolStripMenuItem
             // 
-            this.LabelNumToner.AutoSize = true;
-            this.LabelNumToner.Location = new System.Drawing.Point(3, 154);
-            this.LabelNumToner.Name = "LabelNumToner";
-            this.LabelNumToner.Size = new System.Drawing.Size(124, 15);
-            this.LabelNumToner.TabIndex = 11;
-            this.LabelNumToner.Text = "El toner es el numero: ";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Cambiar Toner";
-            this.button1.UseVisualStyleBackColor = true;
+            this.listaImpresorasToolStripMenuItem.Name = "listaImpresorasToolStripMenuItem";
+            this.listaImpresorasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listaImpresorasToolStripMenuItem.Text = "Lista Impresoras";
             // 
             // Sistoners
             // 
@@ -298,6 +317,8 @@ namespace SistemaToners
         private System.Windows.Forms.Label LabelNumToner;
         private System.Windows.Forms.Label LabelCambio;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem tonerToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem listaImpresorasToolStripMenuItem;
     }
 }
 
