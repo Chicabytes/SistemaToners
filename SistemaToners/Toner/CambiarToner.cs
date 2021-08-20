@@ -19,5 +19,10 @@ namespace SistemaToners
         {
 
         }
+
+        private void FechaCambio_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
     }
 }
