@@ -16,26 +16,27 @@ namespace SistemaToners
         {
             InitializeComponent();
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void tonerToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ListaToners lista = new ListaToners();
             lista.ShowDialog();
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void CambioToner_Click(object sender, EventArgs e)
         {
-
+            CambiarToner cambiarToner = new CambiarToner();
+            cambiarToner.Show();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void nuevaImpresoraToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Gestion.Visible = false;
+            NuevaImpresora.Visible = true;
+        }
 
+        private void gestionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Gestion.Visible = true;
+            NuevaImpresora.Visible = false;
         }
     }
 }
