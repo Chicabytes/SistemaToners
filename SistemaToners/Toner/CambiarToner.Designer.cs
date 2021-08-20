@@ -177,7 +177,7 @@ namespace SistemaToners
             this.Controls.Add(this.label1);
             this.Name = "CambiarToner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CambiarToner";
+            this.Text = "Cambiar Toner";
             this.Load += new System.EventHandler(this.CambiarToner_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

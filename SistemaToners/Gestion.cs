@@ -24,6 +24,17 @@ namespace SistemaToners
 
         private void tonerToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            ListaToners lista = new ListaToners();
+            lista.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

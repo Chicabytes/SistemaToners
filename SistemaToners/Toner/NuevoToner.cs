@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace SistemaToners
 {
-    public partial class NuevoToner : Form
+    public partial class r : Form
     {
-        public NuevoToner()
+        public r()
         {
             InitializeComponent();
         }
