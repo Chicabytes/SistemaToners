@@ -114,19 +114,19 @@ namespace SistemaToners
             // nuevoTonerToolStripMenuItem
             // 
             this.nuevoTonerToolStripMenuItem.Name = "nuevoTonerToolStripMenuItem";
-            this.nuevoTonerToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.nuevoTonerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoTonerToolStripMenuItem.Text = "Nuevo toner";
             // 
             // editarTonerToolStripMenuItem
             // 
             this.editarTonerToolStripMenuItem.Name = "editarTonerToolStripMenuItem";
-            this.editarTonerToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.editarTonerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editarTonerToolStripMenuItem.Text = "Editar Toner";
             // 
             // tonerToolStripMenuItem1
             // 
             this.tonerToolStripMenuItem1.Name = "tonerToolStripMenuItem1";
-            this.tonerToolStripMenuItem1.Size = new System.Drawing.Size(140, 22);
+            this.tonerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.tonerToolStripMenuItem1.Text = "Lista Toners";
             this.tonerToolStripMenuItem1.Click += new System.EventHandler(this.tonerToolStripMenuItem1_Click);
             // 
@@ -244,7 +244,7 @@ namespace SistemaToners
             this.Gestion.Controls.Add(this.LabAreaGest);
             this.Gestion.Location = new System.Drawing.Point(12, 24);
             this.Gestion.Name = "Gestion";
-            this.Gestion.Size = new System.Drawing.Size(265, 414);
+            this.Gestion.Size = new System.Drawing.Size(265, 368);
             this.Gestion.TabIndex = 1;
             // 
             // CambioToner
@@ -497,10 +497,10 @@ namespace SistemaToners
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(289, 450);
+            this.ClientSize = new System.Drawing.Size(289, 408);
             this.Controls.Add(this.MainMenu);
-            this.Controls.Add(this.Gestion);
             this.Controls.Add(this.NuevaImpresora);
+            this.Controls.Add(this.Gestion);
             this.MainMenuStrip = this.MainMenu;
             this.Name = "Sistoners";
             this.Text = "Sistema de Toners";
