@@ -172,13 +172,13 @@ namespace SistemaToners
             // areaToolStripMenuItem1
             // 
             this.areaToolStripMenuItem1.Name = "areaToolStripMenuItem1";
-            this.areaToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
+            this.areaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.areaToolStripMenuItem1.Text = "Nueva area";
             // 
             // editarPuestoToolStripMenuItem
             // 
             this.editarPuestoToolStripMenuItem.Name = "editarPuestoToolStripMenuItem";
-            this.editarPuestoToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.editarPuestoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editarPuestoToolStripMenuItem.Text = "Editar Puesto";
             // 
             // toolStripMenuItem1

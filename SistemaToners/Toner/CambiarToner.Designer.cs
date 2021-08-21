@@ -35,13 +35,13 @@ namespace SistemaToners
             this.Contador = new System.Windows.Forms.Label();
             this.TBContador = new System.Windows.Forms.TextBox();
             this.Fecha = new System.Windows.Forms.Label();
-            this.FechaCambio = new System.Windows.Forms.MonthCalendar();
             this.TBaja = new System.Windows.Forms.Label();
             this.BoxBaja = new System.Windows.Forms.ComboBox();
             this.TAlta = new System.Windows.Forms.Label();
             this.BoxAlta = new System.Windows.Forms.ComboBox();
             this.BotonGuardar = new System.Windows.Forms.Button();
             this.BotonCancelar = new System.Windows.Forms.Button();
+            this.fechaCambio = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -85,6 +85,7 @@ namespace SistemaToners
             // 
             // TBContador
             // 
+            this.TBContador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TBContador.Location = new System.Drawing.Point(75, 90);
             this.TBContador.Name = "TBContador";
             this.TBContador.Size = new System.Drawing.Size(100, 23);
@@ -99,17 +100,10 @@ namespace SistemaToners
             this.Fecha.TabIndex = 5;
             this.Fecha.Text = "Fecha de cambio";
             // 
-            // FechaCambio
-            // 
-            this.FechaCambio.Location = new System.Drawing.Point(12, 143);
-            this.FechaCambio.Name = "FechaCambio";
-            this.FechaCambio.TabIndex = 6;
-            this.FechaCambio.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.FechaCambio_DateChanged);
-            // 
             // TBaja
             // 
             this.TBaja.AutoSize = true;
-            this.TBaja.Location = new System.Drawing.Point(15, 320);
+            this.TBaja.Location = new System.Drawing.Point(12, 151);
             this.TBaja.Name = "TBaja";
             this.TBaja.Size = new System.Drawing.Size(64, 15);
             this.TBaja.TabIndex = 7;
@@ -118,7 +112,7 @@ namespace SistemaToners
             // BoxBaja
             // 
             this.BoxBaja.FormattingEnabled = true;
-            this.BoxBaja.Location = new System.Drawing.Point(85, 317);
+            this.BoxBaja.Location = new System.Drawing.Point(82, 148);
             this.BoxBaja.Name = "BoxBaja";
             this.BoxBaja.Size = new System.Drawing.Size(121, 23);
             this.BoxBaja.TabIndex = 8;
@@ -126,7 +120,7 @@ namespace SistemaToners
             // TAlta
             // 
             this.TAlta.AutoSize = true;
-            this.TAlta.Location = new System.Drawing.Point(15, 349);
+            this.TAlta.Location = new System.Drawing.Point(13, 180);
             this.TAlta.Name = "TAlta";
             this.TAlta.Size = new System.Drawing.Size(63, 15);
             this.TAlta.TabIndex = 9;
@@ -135,14 +129,14 @@ namespace SistemaToners
             // BoxAlta
             // 
             this.BoxAlta.FormattingEnabled = true;
-            this.BoxAlta.Location = new System.Drawing.Point(85, 346);
+            this.BoxAlta.Location = new System.Drawing.Point(82, 177);
             this.BoxAlta.Name = "BoxAlta";
             this.BoxAlta.Size = new System.Drawing.Size(121, 23);
             this.BoxAlta.TabIndex = 10;
             // 
             // BotonGuardar
             // 
-            this.BotonGuardar.Location = new System.Drawing.Point(15, 404);
+            this.BotonGuardar.Location = new System.Drawing.Point(12, 223);
             this.BotonGuardar.Name = "BotonGuardar";
             this.BotonGuardar.Size = new System.Drawing.Size(75, 23);
             this.BotonGuardar.TabIndex = 11;
@@ -151,25 +145,33 @@ namespace SistemaToners
             // 
             // BotonCancelar
             // 
-            this.BotonCancelar.Location = new System.Drawing.Point(100, 404);
+            this.BotonCancelar.Location = new System.Drawing.Point(100, 223);
             this.BotonCancelar.Name = "BotonCancelar";
             this.BotonCancelar.Size = new System.Drawing.Size(75, 23);
             this.BotonCancelar.TabIndex = 12;
             this.BotonCancelar.Text = "Cancelar";
             this.BotonCancelar.UseVisualStyleBackColor = true;
+            this.BotonCancelar.Click += new System.EventHandler(this.BotonCancelar_Click);
+            // 
+            // fechaCambio
+            // 
+            this.fechaCambio.Location = new System.Drawing.Point(115, 119);
+            this.fechaCambio.Name = "fechaCambio";
+            this.fechaCambio.Size = new System.Drawing.Size(140, 23);
+            this.fechaCambio.TabIndex = 14;
             // 
             // CambiarToner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(289, 450);
+            this.ClientSize = new System.Drawing.Size(289, 256);
+            this.Controls.Add(this.fechaCambio);
             this.Controls.Add(this.BotonCancelar);
             this.Controls.Add(this.BotonGuardar);
             this.Controls.Add(this.BoxAlta);
             this.Controls.Add(this.TAlta);
             this.Controls.Add(this.BoxBaja);
             this.Controls.Add(this.TBaja);
-            this.Controls.Add(this.FechaCambio);
             this.Controls.Add(this.Fecha);
             this.Controls.Add(this.TBContador);
             this.Controls.Add(this.Contador);
@@ -179,7 +181,6 @@ namespace SistemaToners
             this.Name = "CambiarToner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cambiar Toner";
-            this.Load += new System.EventHandler(this.CambiarToner_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,12 +194,12 @@ namespace SistemaToners
         private System.Windows.Forms.Label Contador;
         private System.Windows.Forms.TextBox TBContador;
         private System.Windows.Forms.Label Fecha;
-        private System.Windows.Forms.MonthCalendar FechaCambio;
         private System.Windows.Forms.Label TBaja;
         private System.Windows.Forms.ComboBox BoxBaja;
         private System.Windows.Forms.Label TAlta;
         private System.Windows.Forms.ComboBox BoxAlta;
         private System.Windows.Forms.Button BotonGuardar;
         private System.Windows.Forms.Button BotonCancelar;
+        private System.Windows.Forms.DateTimePicker fechaCambio;
     }
 }
