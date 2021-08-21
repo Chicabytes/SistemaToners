@@ -115,19 +115,19 @@ namespace SistemaToners
             // nuevoTonerToolStripMenuItem
             // 
             this.nuevoTonerToolStripMenuItem.Name = "nuevoTonerToolStripMenuItem";
-            this.nuevoTonerToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.nuevoTonerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoTonerToolStripMenuItem.Text = "Nuevo toner";
             // 
             // editarTonerToolStripMenuItem
             // 
             this.editarTonerToolStripMenuItem.Name = "editarTonerToolStripMenuItem";
-            this.editarTonerToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.editarTonerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editarTonerToolStripMenuItem.Text = "Editar Toner";
             // 
             // tonerToolStripMenuItem1
             // 
             this.tonerToolStripMenuItem1.Name = "tonerToolStripMenuItem1";
-            this.tonerToolStripMenuItem1.Size = new System.Drawing.Size(140, 22);
+            this.tonerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.tonerToolStripMenuItem1.Text = "Lista Toners";
             this.tonerToolStripMenuItem1.Click += new System.EventHandler(this.tonerToolStripMenuItem1_Click);
             // 
