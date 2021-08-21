@@ -38,5 +38,10 @@ namespace SistemaToners
             Gestion.Visible = true;
             NuevaImpresora.Visible = false;
         }
+
+        private void Cancelar_Click(object sender, EventArgs e)
+        {
+            gestionToolStripMenuItem_Click(sender, e);
+        }
     }
 }
