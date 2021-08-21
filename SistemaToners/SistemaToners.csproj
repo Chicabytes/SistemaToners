@@ -11,8 +11,4 @@
     <PackageReference Include="System.Data.SQLite.EF6" Version="1.0.114" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Impresora\" />
-  </ItemGroup>
-
 </Project>

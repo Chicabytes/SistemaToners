@@ -157,8 +157,9 @@ namespace SistemaToners
             // listaImpresorasToolStripMenuItem
             // 
             this.listaImpresorasToolStripMenuItem.Name = "listaImpresorasToolStripMenuItem";
-            this.listaImpresorasToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.listaImpresorasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listaImpresorasToolStripMenuItem.Text = "Lista Impresoras";
+            this.listaImpresorasToolStripMenuItem.Click += new System.EventHandler(this.listaImpresorasToolStripMenuItem_Click);
             // 
             // areaToolStripMenuItem
             // 
@@ -333,7 +334,7 @@ namespace SistemaToners
             // 
             // Cancelar
             // 
-            this.Cancelar.Location = new System.Drawing.Point(122, 338);
+            this.Cancelar.Location = new System.Drawing.Point(118, 338);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(109, 23);
             this.Cancelar.TabIndex = 20;
@@ -351,7 +352,7 @@ namespace SistemaToners
             // NiP
             // 
             this.NiP.AutoSize = true;
-            this.NiP.Location = new System.Drawing.Point(7, 296);
+            this.NiP.Location = new System.Drawing.Point(3, 296);
             this.NiP.Name = "NiP";
             this.NiP.Size = new System.Drawing.Size(80, 15);
             this.NiP.TabIndex = 18;
@@ -381,9 +382,9 @@ namespace SistemaToners
             // 
             // observacion
             // 
-            this.observacion.Location = new System.Drawing.Point(7, 195);
+            this.observacion.Location = new System.Drawing.Point(3, 195);
             this.observacion.Name = "observacion";
-            this.observacion.Size = new System.Drawing.Size(237, 23);
+            this.observacion.Size = new System.Drawing.Size(241, 23);
             this.observacion.TabIndex = 15;
             // 
             // CartuchoContinuo
@@ -410,7 +411,7 @@ namespace SistemaToners
             // 
             // Guardar
             // 
-            this.Guardar.Location = new System.Drawing.Point(7, 338);
+            this.Guardar.Location = new System.Drawing.Point(3, 338);
             this.Guardar.Name = "Guardar";
             this.Guardar.Size = new System.Drawing.Size(109, 23);
             this.Guardar.TabIndex = 12;
@@ -429,7 +430,7 @@ namespace SistemaToners
             // TipoConexion
             // 
             this.TipoConexion.AutoSize = true;
-            this.TipoConexion.Location = new System.Drawing.Point(7, 231);
+            this.TipoConexion.Location = new System.Drawing.Point(3, 231);
             this.TipoConexion.Name = "TipoConexion";
             this.TipoConexion.Size = new System.Drawing.Size(98, 15);
             this.TipoConexion.TabIndex = 10;

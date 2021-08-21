@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaToners.Impresora;
 
 namespace SistemaToners
 {
@@ -44,5 +45,22 @@ namespace SistemaToners
             gestionToolStripMenuItem_Click(sender, e);
         }
 
+        private void listaImpresorasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListaImpresoras impresoras = new ListaImpresoras();
+            impresoras.Show();
+        }
+        private void nuevonuevoTonerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NuevoToner nuevoToner = new NuevoToner();
+            nuevoToner.Show();
+        }
+
+        private void editarTonerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Necesito sobrecargar el objeto para que se envie con la informacion existente del toner para su upgrade
+            NuevoToner nuevoToner = new NuevoToner();
+            nuevoToner.Show();
+        }
     }
 }

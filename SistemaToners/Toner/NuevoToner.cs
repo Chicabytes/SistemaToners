@@ -8,11 +8,21 @@ using System.Windows.Forms;
 
 namespace SistemaToners
 {
-    public partial class r : Form
+    public partial class NuevoToner : Form
     {
-        public r()
+        public NuevoToner()
         {
             InitializeComponent();
+        }
+
+        private void r_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Guardar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
