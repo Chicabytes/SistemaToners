@@ -81,6 +81,7 @@ namespace SistemaToners
             this.Guardar.TabIndex = 4;
             this.Guardar.Text = "Guardar";
             this.Guardar.UseVisualStyleBackColor = true;
+            this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
             // 
             // Cancelar
             // 
@@ -116,6 +117,7 @@ namespace SistemaToners
             this.Controls.Add(this.SelecImpresora);
             this.Name = "nuevoToner";
             this.Text = "Nuevo Toner";
+            this.Load += new System.EventHandler(this.r_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

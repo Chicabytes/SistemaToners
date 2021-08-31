@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SistemaToners.Area;
+
 namespace SistemaToners
 {
     public partial class Sistoners : Form
@@ -51,10 +51,27 @@ namespace SistemaToners
             NuevaImpresora.Visible = false;
         }
 
-        private void areaToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void Cancelar_Click(object sender, EventArgs e)
         {
-            ListaAreas nlistaarea = new ListaAreas();
-            nlistaarea.Show();
+            gestionToolStripMenuItem_Click(sender, e);
+        }
+
+        private void listaImpresorasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListaImpresoras impresoras = new ListaImpresoras();
+            impresoras.Show();
+        }
+        private void nuevonuevoTonerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NuevoToner nuevoToner = new NuevoToner();
+            nuevoToner.Show();
+        }
+
+        private void editarTonerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Necesito sobrecargar el objeto para que se envie con la informacion existente del toner para su upgrade
+            NuevoToner nuevoToner = new NuevoToner();
+            nuevoToner.Show();
         }
     }
 }

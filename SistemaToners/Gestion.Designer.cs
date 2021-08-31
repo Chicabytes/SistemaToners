@@ -53,24 +53,24 @@ namespace SistemaToners
             this.LabelCambio = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LabelModeloToner = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CombImpresora = new System.Windows.Forms.ComboBox();
             this.NuevaImpresora = new System.Windows.Forms.Panel();
             this.Cancelar = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.NiP = new System.Windows.Forms.Label();
             this.IP = new System.Windows.Forms.RadioButton();
             this.USB = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.observacion = new System.Windows.Forms.TextBox();
             this.CartuchoContinuo = new System.Windows.Forms.RadioButton();
             this.Toner = new System.Windows.Forms.RadioButton();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Guardar = new System.Windows.Forms.Button();
             this.obs = new System.Windows.Forms.Label();
             this.TipoConexion = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.TTinta = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CombMarca = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.CombPuesto = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -114,20 +114,20 @@ namespace SistemaToners
             // nuevoTonerToolStripMenuItem
             // 
             this.nuevoTonerToolStripMenuItem.Name = "nuevoTonerToolStripMenuItem";
-            this.nuevoTonerToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.nuevoTonerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoTonerToolStripMenuItem.Text = "Nuevo toner";
             this.nuevoTonerToolStripMenuItem.Click += new System.EventHandler(this.nuevoTonerToolStripMenuItem_Click);
             // 
             // editarTonerToolStripMenuItem
             // 
             this.editarTonerToolStripMenuItem.Name = "editarTonerToolStripMenuItem";
-            this.editarTonerToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.editarTonerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editarTonerToolStripMenuItem.Text = "Editar Toner";
             // 
             // tonerToolStripMenuItem1
             // 
             this.tonerToolStripMenuItem1.Name = "tonerToolStripMenuItem1";
-            this.tonerToolStripMenuItem1.Size = new System.Drawing.Size(140, 22);
+            this.tonerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.tonerToolStripMenuItem1.Text = "Lista Toners";
             this.tonerToolStripMenuItem1.Click += new System.EventHandler(this.tonerToolStripMenuItem1_Click);
             // 
@@ -159,6 +159,7 @@ namespace SistemaToners
             this.listaImpresorasToolStripMenuItem.Name = "listaImpresorasToolStripMenuItem";
             this.listaImpresorasToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.listaImpresorasToolStripMenuItem.Text = "Lista Impresoras";
+            this.listaImpresorasToolStripMenuItem.Click += new System.EventHandler(this.listaImpresorasToolStripMenuItem_Click);
             // 
             // areaToolStripMenuItem
             // 
@@ -174,6 +175,14 @@ namespace SistemaToners
             this.areaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.areaToolStripMenuItem1.Text = "Lista areas";
             this.areaToolStripMenuItem1.Click += new System.EventHandler(this.areaToolStripMenuItem1_Click);
+            this.areaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.areaToolStripMenuItem1.Text = "Nueva area";
+            // 
+            // editarPuestoToolStripMenuItem
+            // 
+            this.editarPuestoToolStripMenuItem.Name = "editarPuestoToolStripMenuItem";
+            this.editarPuestoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarPuestoToolStripMenuItem.Text = "Editar Puesto";
             // 
             // toolStripMenuItem1
             // 
@@ -231,7 +240,7 @@ namespace SistemaToners
             this.Gestion.Controls.Add(this.LabelCambio);
             this.Gestion.Controls.Add(this.label1);
             this.Gestion.Controls.Add(this.LabelModeloToner);
-            this.Gestion.Controls.Add(this.comboBox1);
+            this.Gestion.Controls.Add(this.CombImpresora);
             this.Gestion.Controls.Add(this.LabGestImpre);
             this.Gestion.Controls.Add(this.ComboPuesto);
             this.Gestion.Controls.Add(this.LabGestPuesto);
@@ -289,33 +298,33 @@ namespace SistemaToners
             this.LabelModeloToner.TabIndex = 8;
             this.LabelModeloToner.Text = "El modelo de toner es: ";
             // 
-            // comboBox1
+            // CombImpresora
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(123, 69);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 7;
+            this.CombImpresora.FormattingEnabled = true;
+            this.CombImpresora.Location = new System.Drawing.Point(123, 69);
+            this.CombImpresora.Name = "CombImpresora";
+            this.CombImpresora.Size = new System.Drawing.Size(121, 23);
+            this.CombImpresora.TabIndex = 7;
             // 
             // NuevaImpresora
             // 
             this.NuevaImpresora.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.NuevaImpresora.Controls.Add(this.Cancelar);
-            this.NuevaImpresora.Controls.Add(this.textBox2);
+            this.NuevaImpresora.Controls.Add(this.numIp);
             this.NuevaImpresora.Controls.Add(this.NiP);
             this.NuevaImpresora.Controls.Add(this.IP);
             this.NuevaImpresora.Controls.Add(this.USB);
-            this.NuevaImpresora.Controls.Add(this.textBox1);
+            this.NuevaImpresora.Controls.Add(this.observacion);
             this.NuevaImpresora.Controls.Add(this.CartuchoContinuo);
             this.NuevaImpresora.Controls.Add(this.Toner);
-            this.NuevaImpresora.Controls.Add(this.button2);
+            this.NuevaImpresora.Controls.Add(this.Guardar);
             this.NuevaImpresora.Controls.Add(this.obs);
             this.NuevaImpresora.Controls.Add(this.TipoConexion);
             this.NuevaImpresora.Controls.Add(this.label4);
             this.NuevaImpresora.Controls.Add(this.TTinta);
-            this.NuevaImpresora.Controls.Add(this.comboBox2);
+            this.NuevaImpresora.Controls.Add(this.CombMarca);
             this.NuevaImpresora.Controls.Add(this.label6);
-            this.NuevaImpresora.Controls.Add(this.comboBox3);
+            this.NuevaImpresora.Controls.Add(this.CombPuesto);
             this.NuevaImpresora.Controls.Add(this.label7);
             this.NuevaImpresora.Controls.Add(this.comboBox4);
             this.NuevaImpresora.Controls.Add(this.label8);
@@ -337,15 +346,25 @@ namespace SistemaToners
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 293);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 19;
+            this.Cancelar.Location = new System.Drawing.Point(118, 338);
+            this.Cancelar.Name = "Cancelar";
+            this.Cancelar.Size = new System.Drawing.Size(109, 23);
+            this.Cancelar.TabIndex = 20;
+            this.Cancelar.Text = "Cancelar";
+            this.Cancelar.UseVisualStyleBackColor = true;
+            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
+            // 
+            // numIp
+            // 
+            this.numIp.Location = new System.Drawing.Point(123, 293);
+            this.numIp.Name = "numIp";
+            this.numIp.Size = new System.Drawing.Size(121, 23);
+            this.numIp.TabIndex = 19;
             // 
             // NiP
             // 
             this.NiP.AutoSize = true;
-            this.NiP.Location = new System.Drawing.Point(7, 296);
+            this.NiP.Location = new System.Drawing.Point(3, 296);
             this.NiP.Name = "NiP";
             this.NiP.Size = new System.Drawing.Size(80, 15);
             this.NiP.TabIndex = 18;
@@ -373,12 +392,12 @@ namespace SistemaToners
             this.USB.Text = "USB";
             this.USB.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // observacion
             // 
-            this.textBox1.Location = new System.Drawing.Point(7, 195);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 23);
-            this.textBox1.TabIndex = 15;
+            this.observacion.Location = new System.Drawing.Point(3, 195);
+            this.observacion.Name = "observacion";
+            this.observacion.Size = new System.Drawing.Size(241, 23);
+            this.observacion.TabIndex = 15;
             // 
             // CartuchoContinuo
             // 
@@ -402,14 +421,14 @@ namespace SistemaToners
             this.Toner.Text = "Toner";
             this.Toner.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Guardar
             // 
-            this.button2.Location = new System.Drawing.Point(7, 338);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Guardar.Location = new System.Drawing.Point(3, 338);
+            this.Guardar.Name = "Guardar";
+            this.Guardar.Size = new System.Drawing.Size(109, 23);
+            this.Guardar.TabIndex = 12;
+            this.Guardar.Text = "Guardar";
+            this.Guardar.UseVisualStyleBackColor = true;
             // 
             // obs
             // 
@@ -423,7 +442,7 @@ namespace SistemaToners
             // TipoConexion
             // 
             this.TipoConexion.AutoSize = true;
-            this.TipoConexion.Location = new System.Drawing.Point(7, 231);
+            this.TipoConexion.Location = new System.Drawing.Point(3, 231);
             this.TipoConexion.Name = "TipoConexion";
             this.TipoConexion.Size = new System.Drawing.Size(98, 15);
             this.TipoConexion.TabIndex = 10;
@@ -448,13 +467,13 @@ namespace SistemaToners
             this.TTinta.TabIndex = 8;
             this.TTinta.Text = "Tipo de tinta";
             // 
-            // comboBox2
+            // CombMarca
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(123, 69);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 23);
-            this.comboBox2.TabIndex = 7;
+            this.CombMarca.FormattingEnabled = true;
+            this.CombMarca.Location = new System.Drawing.Point(123, 69);
+            this.CombMarca.Name = "CombMarca";
+            this.CombMarca.Size = new System.Drawing.Size(121, 23);
+            this.CombMarca.TabIndex = 7;
             // 
             // label6
             // 
@@ -465,13 +484,13 @@ namespace SistemaToners
             this.label6.TabIndex = 6;
             this.label6.Text = "Seleccione la marca";
             // 
-            // comboBox3
+            // CombPuesto
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(123, 40);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 23);
-            this.comboBox3.TabIndex = 5;
+            this.CombPuesto.FormattingEnabled = true;
+            this.CombPuesto.Location = new System.Drawing.Point(123, 40);
+            this.CombPuesto.Name = "CombPuesto";
+            this.CombPuesto.Size = new System.Drawing.Size(121, 23);
+            this.CombPuesto.TabIndex = 5;
             // 
             // label7
             // 
@@ -540,7 +559,7 @@ namespace SistemaToners
         private System.Windows.Forms.Label LabGestImpre;
         private System.Windows.Forms.Panel Gestion;
         private System.Windows.Forms.Label LabelModeloToner;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CombImpresora;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LabelNumToner;
         private System.Windows.Forms.Label LabelCambio;
@@ -550,21 +569,23 @@ namespace SistemaToners
         private System.Windows.Forms.Panel NuevaImpresora;
         private System.Windows.Forms.RadioButton CartuchoContinuo;
         private System.Windows.Forms.RadioButton Toner;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Guardar;
         private System.Windows.Forms.Label obs;
         private System.Windows.Forms.Label TipoConexion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label TTinta;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox CombMarca;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox CombPuesto;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox observacion;
         private System.Windows.Forms.Label NiP;
         private System.Windows.Forms.RadioButton IP;
         private System.Windows.Forms.RadioButton USB;
+        private System.Windows.Forms.ToolStripMenuItem editarPuestoToolStripMenuItem;
+        private System.Windows.Forms.TextBox numIp;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.Button Cancelar;

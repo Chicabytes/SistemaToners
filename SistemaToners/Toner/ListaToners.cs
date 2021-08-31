@@ -23,7 +23,17 @@ namespace SistemaToners
 
         private void Cancelar_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
+        }
+
+        private void saveFile_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
