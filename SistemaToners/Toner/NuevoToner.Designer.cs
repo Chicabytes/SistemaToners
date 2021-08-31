@@ -1,7 +1,7 @@
 ﻿
 namespace SistemaToners
 {
-    partial class r
+    partial class nuevoToner
     {
         /// <summary>
         /// Required designer variable.
@@ -90,6 +90,7 @@ namespace SistemaToners
             this.Cancelar.TabIndex = 5;
             this.Cancelar.Text = "Cancelar";
             this.Cancelar.UseVisualStyleBackColor = true;
+            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
             // 
             // Numero
             // 
@@ -101,7 +102,7 @@ namespace SistemaToners
             this.Numero.TabIndex = 6;
             this.Numero.Text = " ";
             // 
-            // r
+            // nuevoToner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -113,7 +114,7 @@ namespace SistemaToners
             this.Controls.Add(this.TonerAnterior);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.SelecImpresora);
-            this.Name = "r";
+            this.Name = "nuevoToner";
             this.Text = "Nuevo Toner";
             this.ResumeLayout(false);
             this.PerformLayout();

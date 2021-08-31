@@ -104,7 +104,6 @@ namespace SistemaToners
             this.FechaCambio.Location = new System.Drawing.Point(12, 143);
             this.FechaCambio.Name = "FechaCambio";
             this.FechaCambio.TabIndex = 6;
-            this.FechaCambio.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.FechaCambio_DateChanged);
             // 
             // TBaja
             // 
@@ -157,6 +156,7 @@ namespace SistemaToners
             this.BotonCancelar.TabIndex = 12;
             this.BotonCancelar.Text = "Cancelar";
             this.BotonCancelar.UseVisualStyleBackColor = true;
+            this.BotonCancelar.Click += new System.EventHandler(this.BotonCancelar_Click);
             // 
             // CambiarToner
             // 
@@ -179,7 +179,6 @@ namespace SistemaToners
             this.Name = "CambiarToner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cambiar Toner";
-            this.Load += new System.EventHandler(this.CambiarToner_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

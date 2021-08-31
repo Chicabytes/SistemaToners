@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SistemaToners
+namespace SistemaToners.Area
 {
-    public partial class nuevoToner : Form
+    public partial class AgregArea : Form
     {
-        public nuevoToner()
+        public AgregArea()
         {
             InitializeComponent();
         }

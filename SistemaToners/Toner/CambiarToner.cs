@@ -14,15 +14,10 @@ namespace SistemaToners
         {
             InitializeComponent();
         }
-
-        private void CambiarToner_Load(object sender, EventArgs e)
+        
+        private void BotonCancelar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void FechaCambio_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

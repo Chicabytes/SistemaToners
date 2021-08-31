@@ -6,13 +6,19 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SistemaToners
+namespace SistemaToners.Area
 {
-    public partial class nuevoToner : Form
+    public partial class ListaAreas : Form
     {
-        public nuevoToner()
+        public ListaAreas()
         {
             InitializeComponent();
+        }
+
+        private void AgreArea_Click(object sender, EventArgs e)
+        {
+            AgregArea nagregar = new AgregArea();
+            nagregar.Show();
         }
 
         private void Cancelar_Click(object sender, EventArgs e)

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using SistemaToners.Area;
 namespace SistemaToners
 {
     public partial class Sistoners : Form
@@ -37,6 +37,24 @@ namespace SistemaToners
         {
             Gestion.Visible = true;
             NuevaImpresora.Visible = false;
+        }
+
+        private void nuevoTonerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            nuevoToner ntoner = new nuevoToner();
+            ntoner.Show();
+        }
+
+        private void Cancelar_Click(object sender, EventArgs e)
+        {
+            Gestion.Visible = true;
+            NuevaImpresora.Visible = false;
+        }
+
+        private void areaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ListaAreas nlistaarea = new ListaAreas();
+            nlistaarea.Show();
         }
     }
 }
