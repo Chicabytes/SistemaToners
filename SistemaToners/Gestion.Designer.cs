@@ -56,7 +56,6 @@ namespace SistemaToners
             this.CombImpresora = new System.Windows.Forms.ComboBox();
             this.NuevaImpresora = new System.Windows.Forms.Panel();
             this.Cancelar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.NiP = new System.Windows.Forms.Label();
             this.IP = new System.Windows.Forms.RadioButton();
             this.USB = new System.Windows.Forms.RadioButton();
@@ -74,6 +73,7 @@ namespace SistemaToners
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.MainMenu.SuspendLayout();
             this.Gestion.SuspendLayout();
             this.NuevaImpresora.SuspendLayout();
@@ -114,20 +114,20 @@ namespace SistemaToners
             // nuevoTonerToolStripMenuItem
             // 
             this.nuevoTonerToolStripMenuItem.Name = "nuevoTonerToolStripMenuItem";
-            this.nuevoTonerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoTonerToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.nuevoTonerToolStripMenuItem.Text = "Nuevo toner";
             this.nuevoTonerToolStripMenuItem.Click += new System.EventHandler(this.nuevoTonerToolStripMenuItem_Click);
             // 
             // editarTonerToolStripMenuItem
             // 
             this.editarTonerToolStripMenuItem.Name = "editarTonerToolStripMenuItem";
-            this.editarTonerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarTonerToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.editarTonerToolStripMenuItem.Text = "Editar Toner";
             // 
             // tonerToolStripMenuItem1
             // 
             this.tonerToolStripMenuItem1.Name = "tonerToolStripMenuItem1";
-            this.tonerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.tonerToolStripMenuItem1.Size = new System.Drawing.Size(140, 22);
             this.tonerToolStripMenuItem1.Text = "Lista Toners";
             this.tonerToolStripMenuItem1.Click += new System.EventHandler(this.tonerToolStripMenuItem1_Click);
             // 
@@ -172,17 +172,9 @@ namespace SistemaToners
             // areaToolStripMenuItem1
             // 
             this.areaToolStripMenuItem1.Name = "areaToolStripMenuItem1";
-            this.areaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.areaToolStripMenuItem1.Text = "Lista areas";
-            this.areaToolStripMenuItem1.Click += new System.EventHandler(this.areaToolStripMenuItem1_Click);
-            this.areaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.areaToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
             this.areaToolStripMenuItem1.Text = "Nueva area";
-            // 
-            // editarPuestoToolStripMenuItem
-            // 
-            this.editarPuestoToolStripMenuItem.Name = "editarPuestoToolStripMenuItem";
-            this.editarPuestoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.editarPuestoToolStripMenuItem.Text = "Editar Puesto";
+            this.areaToolStripMenuItem1.Click += new System.EventHandler(this.areaToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -310,7 +302,6 @@ namespace SistemaToners
             // 
             this.NuevaImpresora.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.NuevaImpresora.Controls.Add(this.Cancelar);
-            this.NuevaImpresora.Controls.Add(this.numIp);
             this.NuevaImpresora.Controls.Add(this.NiP);
             this.NuevaImpresora.Controls.Add(this.IP);
             this.NuevaImpresora.Controls.Add(this.USB);
@@ -336,16 +327,6 @@ namespace SistemaToners
             // 
             // Cancelar
             // 
-            this.Cancelar.Location = new System.Drawing.Point(123, 338);
-            this.Cancelar.Name = "Cancelar";
-            this.Cancelar.Size = new System.Drawing.Size(109, 23);
-            this.Cancelar.TabIndex = 20;
-            this.Cancelar.Text = "Cancelar";
-            this.Cancelar.UseVisualStyleBackColor = true;
-            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
-            // 
-            // textBox2
-            // 
             this.Cancelar.Location = new System.Drawing.Point(118, 338);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(109, 23);
@@ -353,13 +334,6 @@ namespace SistemaToners
             this.Cancelar.Text = "Cancelar";
             this.Cancelar.UseVisualStyleBackColor = true;
             this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
-            // 
-            // numIp
-            // 
-            this.numIp.Location = new System.Drawing.Point(123, 293);
-            this.numIp.Name = "numIp";
-            this.numIp.Size = new System.Drawing.Size(121, 23);
-            this.numIp.TabIndex = 19;
             // 
             // NiP
             // 
@@ -518,13 +492,20 @@ namespace SistemaToners
             this.label8.TabIndex = 0;
             this.label8.Text = "Seleccione el area";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(0, 0);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.TabIndex = 0;
+            // 
             // Sistoners
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 404);
-            this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.NuevaImpresora);
+            this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.Gestion);
             this.MainMenuStrip = this.MainMenu;
             this.Name = "Sistoners";

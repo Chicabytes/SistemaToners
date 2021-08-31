@@ -102,9 +102,9 @@ namespace SistemaToners
             // 
             // FechaCambio
             // 
-            this.FechaCambio.Location = new System.Drawing.Point(12, 143);
-            this.FechaCambio.Name = "FechaCambio";
-            this.FechaCambio.TabIndex = 6;
+            this.fechaCambio.Location = new System.Drawing.Point(12, 143);
+            this.fechaCambio.Name = "FechaCambio";
+            this.fechaCambio.TabIndex = 6;
             // 
             // TBaja
             // 

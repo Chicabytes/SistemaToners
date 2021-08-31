@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaToners.Impresora;
+using SistemaToners.Area;
 
 namespace SistemaToners
 {
@@ -41,19 +43,8 @@ namespace SistemaToners
 
         private void nuevoTonerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            nuevoToner ntoner = new nuevoToner();
+            NuevoToner ntoner = new NuevoToner();
             ntoner.Show();
-        }
-
-        private void Cancelar_Click(object sender, EventArgs e)
-        {
-            Gestion.Visible = true;
-            NuevaImpresora.Visible = false;
-        }
-
-        private void Cancelar_Click(object sender, EventArgs e)
-        {
-            gestionToolStripMenuItem_Click(sender, e);
         }
 
         private void listaImpresorasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,6 +63,18 @@ namespace SistemaToners
             //Necesito sobrecargar el objeto para que se envie con la informacion existente del toner para su upgrade
             NuevoToner nuevoToner = new NuevoToner();
             nuevoToner.Show();
+        }
+
+        private void areaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AgregArea agregArea = new AgregArea();
+            agregArea.Show();
+        }
+
+        private void Cancelar_Click(object sender, EventArgs e)
+        {
+            Gestion.Visible = true;
+            NuevaImpresora.Visible = false;
         }
     }
 }
