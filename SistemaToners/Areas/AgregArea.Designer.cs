@@ -37,7 +37,7 @@ namespace SistemaToners.Areas
             this.Cancelar = new System.Windows.Forms.Button();
             this.Guardar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nombrArea = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // nArea
@@ -113,19 +113,19 @@ namespace SistemaToners.Areas
             this.label1.TabIndex = 10;
             this.label1.Text = "Nombre Area";
             // 
-            // textBox1
+            // nombrArea
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(115, 23);
-            this.textBox1.TabIndex = 0;
+            this.nombrArea.Location = new System.Drawing.Point(124, 7);
+            this.nombrArea.Name = "nombrArea";
+            this.nombrArea.Size = new System.Drawing.Size(115, 23);
+            this.nombrArea.TabIndex = 0;
             // 
             // AgregArea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(251, 152);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nombrArea);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Guardar);
             this.Controls.Add(this.Cancelar);
@@ -152,6 +152,6 @@ namespace SistemaToners.Areas
         private System.Windows.Forms.Button Guardar;
         private System.Windows.Forms.TextBox nombreArea;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nombrArea;
     }
 }

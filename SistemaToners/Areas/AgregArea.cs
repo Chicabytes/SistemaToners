@@ -14,6 +14,12 @@ namespace SistemaToners.Areas
         public AgregArea()
         {
             InitializeComponent();
+            Conexiones nuevaConexion = new Conexiones();
+            List<Area> ListaArea = nuevaConexion.ListaAreas();
+            foreach (var Area in ListaArea)
+            {
+                nArea.Items.Add(Area.Nombre_area.ToString());
+            }
         }
 
         private void Cancelar_Click(object sender, EventArgs e)
@@ -23,11 +29,18 @@ namespace SistemaToners.Areas
 
         private void Guardar_Click(object sender, EventArgs e)
         {
-            Area nuevaArea = new Area();
-            nuevaArea.Nombre_area = textBox1.Text;
-            Conexiones nuevaConexion = new Conexiones();
-            nuevaConexion.AltaArea(nuevaArea);
-            this.Close();
+            if(nombrArea.TextLength != 0)
+            {
+                Area nuevaArea = new Area();
+                nuevaArea.Nombre_area = nombrArea.Text;
+                Conexiones nuevaConexion = new Conexiones();
+                nuevaConexion.AltaArea(nuevaArea);
+                this.Close();
+            }
+            else
+            {
+                
+            }
         }
     }
 }
