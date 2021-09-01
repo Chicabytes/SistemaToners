@@ -100,12 +100,6 @@ namespace SistemaToners
             this.Fecha.TabIndex = 5;
             this.Fecha.Text = "Fecha de cambio";
             // 
-            // FechaCambio
-            // 
-            this.fechaCambio.Location = new System.Drawing.Point(12, 143);
-            this.fechaCambio.Name = "FechaCambio";
-            this.fechaCambio.TabIndex = 6;
-            // 
             // TBaja
             // 
             this.TBaja.AutoSize = true;
@@ -157,6 +151,15 @@ namespace SistemaToners
             this.BotonCancelar.TabIndex = 12;
             this.BotonCancelar.Text = "Cancelar";
             this.BotonCancelar.UseVisualStyleBackColor = true;
+            // 
+            // fechaCambio
+            // 
+            this.fechaCambio.CustomFormat = "";
+            this.fechaCambio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fechaCambio.Location = new System.Drawing.Point(115, 119);
+            this.fechaCambio.Name = "fechaCambio";
+            this.fechaCambio.Size = new System.Drawing.Size(156, 23);
+            this.fechaCambio.TabIndex = 6;
             // 
             // CambiarToner
             // 
