@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaToners.Impresora;
-using SistemaToners.Area;
+using SistemaToners.Areas;
 
 namespace SistemaToners
 {

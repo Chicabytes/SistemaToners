@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SistemaToners.Area
+namespace SistemaToners.Areas
 {
     public partial class ListaAreas : Form
     {

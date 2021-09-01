@@ -1,5 +1,5 @@
 ﻿
-namespace SistemaToners.Area
+namespace SistemaToners.Areas
 {
     partial class ListaAreas
     {
