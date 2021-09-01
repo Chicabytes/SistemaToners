@@ -24,7 +24,7 @@ namespace SistemaToners.Areas
         private void Guardar_Click(object sender, EventArgs e)
         {
             Area nuevaArea = new Area();
-            nuevaArea.Nombre_area = nombArea.Text;
+            nuevaArea.Nombre_area = textBox1.Text;
             Conexiones nuevaConexion = new Conexiones();
             nuevaConexion.AltaArea(nuevaArea);
             this.Close();
