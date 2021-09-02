@@ -83,6 +83,7 @@ namespace SistemaToners.Areas
             this.nuevoNPuesto.Name = "nuevoNPuesto";
             this.nuevoNPuesto.Size = new System.Drawing.Size(115, 23);
             this.nuevoNPuesto.TabIndex = 6;
+            this.nuevoNPuesto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nuevoNPuesto_KeyPress);
             // 
             // Cancelar
             // 
@@ -119,6 +120,7 @@ namespace SistemaToners.Areas
             this.nombrArea.Name = "nombrArea";
             this.nombrArea.Size = new System.Drawing.Size(115, 23);
             this.nombrArea.TabIndex = 0;
+            this.nombrArea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nombrArea_KeyPress);
             // 
             // AgregArea
             // 

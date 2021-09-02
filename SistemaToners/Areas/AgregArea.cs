@@ -46,5 +46,22 @@ namespace SistemaToners.Areas
                 this.Close();
             }
         }
+
+        private void nombrArea_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                Guardar_Click(sender, e);
+            }
+        }
+
+        private void nuevoNPuesto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                Guardar_Click(sender, e);
+            }
+        }
+    
     }
 }
