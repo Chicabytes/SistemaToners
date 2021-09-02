@@ -8,7 +8,6 @@ namespace SistemaToners.Entidades
     {
         private int id;
         private string nombre_area;
-        private int puesto;
 
         public int Id { get => id; set => id = value; }
         public string Nombre_area { get => nombre_area; set => nombre_area = value; }

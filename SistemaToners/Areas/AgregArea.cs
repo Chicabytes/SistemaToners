@@ -29,17 +29,20 @@ namespace SistemaToners.Areas
 
         private void Guardar_Click(object sender, EventArgs e)
         {
+            Conexiones nuevaConexion = new Conexiones();
             if(nombrArea.TextLength != 0)
             {
                 Area nuevaArea = new Area();
                 nuevaArea.Nombre_area = nombrArea.Text;
-                Conexiones nuevaConexion = new Conexiones();
                 nuevaConexion.AltaArea(nuevaArea);
                 this.Close();
             }
             else
             {
-                
+                Area elemento = (Area) nArea.SelectedItem;
+                AreayPuesto nAreayPuesto = new AreayPuesto(elemento, Convert.ToInt32(nuevoNPuesto.Text));
+                nuevaConexion.AltaPuesto(nAreayPuesto);
+                this.Close();
             }
         }
     }

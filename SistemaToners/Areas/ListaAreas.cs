@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using SistemaToners.Entidades;
+using SistemaToners.Conexion;
 
 namespace SistemaToners.Areas
 {
@@ -13,6 +15,12 @@ namespace SistemaToners.Areas
         public ListaAreas()
         {
             InitializeComponent();
+            Conexiones nuevaConexion = new Conexiones();
+            List<AreayPuesto> ListaPuestos = nuevaConexion.ListaPuesto();
+            foreach (var Puesto in ListaPuestos)
+            {
+                ListArea.Items.Add(Puesto);
+            }
         }
 
         private void AgreArea_Click(object sender, EventArgs e)
@@ -24,6 +32,10 @@ namespace SistemaToners.Areas
         private void Cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Buscar_Click(object sender, EventArgs e)
+        {
         }
     }
 }
