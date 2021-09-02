@@ -39,7 +39,8 @@ namespace SistemaToners.Areas
             }
             else
             {
-                Area elemento = (Area) nArea.SelectedItem;
+                Area elemento = new Area();
+                elemento.Nombre_area = nArea.SelectedItem.ToString();
                 AreayPuesto nAreayPuesto = new AreayPuesto(elemento, Convert.ToInt32(nuevoNPuesto.Text));
                 nuevaConexion.AltaPuesto(nAreayPuesto);
                 this.Close();

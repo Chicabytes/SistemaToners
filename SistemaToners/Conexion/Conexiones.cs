@@ -40,13 +40,32 @@ namespace SistemaToners.Conexion
             conexion.Close();
             return ListaArea;
         }
-        public void AltaPuesto(AreayPuesto _area_puesto)
+        private Area BuscarPorNombre(string _nombre)
         {
             var conexion = new SQLiteConnection(pathcompleto());
             conexion.Open();
             var command = conexion.CreateCommand();
-            command.CommandText = "Insert Into Puesto(idArea, puesto) values (@area, @puesto);";
-            command.Parameters.AddWithValue("@area", _area_puesto.Area_puesto.Id);
+            command.CommandText = "Select idArea from Area Where nombreArea = @nombreArea";
+            command.Parameters.AddWithValue("@nombreArea", _nombre);
+            Area _area = new Area();
+            SQLiteDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                _area.Id = Convert.ToInt32(reader["idArea"]);
+                _area.Nombre_area = _nombre;
+            }
+            reader.Close();
+            conexion.Close();
+            return _area;
+        }
+        public void AltaPuesto(AreayPuesto _area_puesto)
+        {
+            Area areabuscada = BuscarPorNombre(_area_puesto.Area_puesto.Nombre_area);
+            var conexion = new SQLiteConnection(pathcompleto());
+            conexion.Open();
+            var command = conexion.CreateCommand();
+            command.CommandText = "Insert Into Puesto(idArea, numPuesto) values (@area, @puesto);";
+            command.Parameters.AddWithValue("@area", areabuscada.Id);
             command.Parameters.AddWithValue("@puesto", _area_puesto.Puesto);
             command.ExecuteNonQuery();
             conexion.Close();
