@@ -62,6 +62,13 @@ namespace SistemaToners.Areas
                 Guardar_Click(sender, e);
             }
         }
-    
+
+        private void AgregArea_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Escape))
+            {
+                this.Close();
+            }
+        }
     }
 }

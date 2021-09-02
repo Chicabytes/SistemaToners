@@ -76,5 +76,13 @@ namespace SistemaToners
             Gestion.Visible = true;
             NuevaImpresora.Visible = false;
         }
+
+        private void Sistoners_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == Convert.ToChar(Keys.Escape))
+            {
+                Close();
+            }
+        }
     }
 }

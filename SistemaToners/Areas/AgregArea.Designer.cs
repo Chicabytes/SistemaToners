@@ -138,6 +138,7 @@ namespace SistemaToners.Areas
             this.Controls.Add(this.nArea);
             this.Name = "AgregArea";
             this.Text = "Agregar";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AgregArea_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

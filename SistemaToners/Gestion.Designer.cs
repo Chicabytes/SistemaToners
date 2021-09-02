@@ -41,7 +41,6 @@ namespace SistemaToners
             this.listaImpresorasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.areaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.LabAreaGest = new System.Windows.Forms.Label();
             this.CombArea = new System.Windows.Forms.ComboBox();
             this.LabGestPuesto = new System.Windows.Forms.Label();
@@ -85,8 +84,7 @@ namespace SistemaToners
             this.gestionToolStripMenuItem,
             this.tonerToolStripMenuItem,
             this.impresoraToolStripMenuItem,
-            this.areaToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.areaToolStripMenuItem});
             this.MainMenu.Location = new System.Drawing.Point(0, 0);
             this.MainMenu.Name = "MainMenu";
             this.MainMenu.Size = new System.Drawing.Size(289, 24);
@@ -175,11 +173,6 @@ namespace SistemaToners
             this.areaToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
             this.areaToolStripMenuItem1.Text = "Nueva area";
             this.areaToolStripMenuItem1.Click += new System.EventHandler(this.areaToolStripMenuItem1_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
             // 
             // LabAreaGest
             // 
@@ -510,6 +503,7 @@ namespace SistemaToners
             this.MainMenuStrip = this.MainMenu;
             this.Name = "Sistoners";
             this.Text = "Sistema de Toners";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Sistoners_KeyPress);
             this.MainMenu.ResumeLayout(false);
             this.MainMenu.PerformLayout();
             this.Gestion.ResumeLayout(false);
@@ -568,7 +562,6 @@ namespace SistemaToners
         private System.Windows.Forms.ToolStripMenuItem editarPuestoToolStripMenuItem;
         private System.Windows.Forms.TextBox numIp;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.Button Cancelar;
     }
 }
