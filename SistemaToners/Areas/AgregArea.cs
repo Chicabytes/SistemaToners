@@ -23,7 +23,7 @@ namespace SistemaToners.Areas
                 coleccion.Add(Area.Nombre_area.ToString());
             }
             nArea.AutoCompleteCustomSource = coleccion;
-            nArea.AutoCompleteMode = AutoCompleteMode.Suggest;
+            nArea.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             nArea.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
         }
