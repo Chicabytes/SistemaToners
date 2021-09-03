@@ -337,7 +337,7 @@ namespace SistemaToners
             // NiP
             // 
             this.NiP.AutoSize = true;
-            this.NiP.Location = new System.Drawing.Point(3, 296);
+            this.NiP.Location = new System.Drawing.Point(3, 301);
             this.NiP.Name = "NiP";
             this.NiP.Size = new System.Drawing.Size(80, 15);
             this.NiP.TabIndex = 18;
@@ -492,7 +492,7 @@ namespace SistemaToners
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 293);
+            this.textBox1.Location = new System.Drawing.Point(123, 298);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 23);
             this.textBox1.TabIndex = 21;
@@ -525,9 +525,9 @@ namespace SistemaToners
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 404);
-            this.Controls.Add(this.NuevaImpresora);
             this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.Gestion);
+            this.Controls.Add(this.NuevaImpresora);
             this.MainMenuStrip = this.MainMenu;
             this.Name = "Sistoners";
             this.Text = "Sistema de Toners";
