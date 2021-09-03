@@ -16,10 +16,16 @@ namespace SistemaToners.Areas
             InitializeComponent();
             Conexiones nuevaConexion = new Conexiones();
             List<Area> ListaArea = nuevaConexion.ListaAreas();
+            AutoCompleteStringCollection coleccion = new AutoCompleteStringCollection();
             foreach (var Area in ListaArea)
             {
                 nArea.Items.Add(Area.Nombre_area.ToString());
+                coleccion.Add(Area.Nombre_area.ToString());
             }
+            nArea.AutoCompleteCustomSource = coleccion;
+            nArea.AutoCompleteMode = AutoCompleteMode.Suggest;
+            nArea.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
         }
 
         private void Cancelar_Click(object sender, EventArgs e)
@@ -61,11 +67,7 @@ namespace SistemaToners.Areas
             {
                 Guardar_Click(sender, e);
             }
-        }
-
-        private void AgregArea_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == Convert.ToChar(Keys.Escape))
+            else if (e.KeyChar == Convert.ToChar(Keys.Escape))
             {
                 this.Close();
             }
