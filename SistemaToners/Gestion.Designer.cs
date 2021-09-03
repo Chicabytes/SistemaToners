@@ -66,14 +66,16 @@ namespace SistemaToners
             this.TipoConexion = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.TTinta = new System.Windows.Forms.Label();
-            this.CombMarca = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.marca = new System.Windows.Forms.Label();
             this.CombPuesto = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.modelo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.MainMenu.SuspendLayout();
             this.Gestion.SuspendLayout();
             this.NuevaImpresora.SuspendLayout();
@@ -295,6 +297,9 @@ namespace SistemaToners
             // NuevaImpresora
             // 
             this.NuevaImpresora.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.NuevaImpresora.Controls.Add(this.label2);
+            this.NuevaImpresora.Controls.Add(this.modelo);
+            this.NuevaImpresora.Controls.Add(this.textBox3);
             this.NuevaImpresora.Controls.Add(this.textBox1);
             this.NuevaImpresora.Controls.Add(this.Cancelar);
             this.NuevaImpresora.Controls.Add(this.NiP);
@@ -308,8 +313,7 @@ namespace SistemaToners
             this.NuevaImpresora.Controls.Add(this.TipoConexion);
             this.NuevaImpresora.Controls.Add(this.label4);
             this.NuevaImpresora.Controls.Add(this.TTinta);
-            this.NuevaImpresora.Controls.Add(this.CombMarca);
-            this.NuevaImpresora.Controls.Add(this.label6);
+            this.NuevaImpresora.Controls.Add(this.marca);
             this.NuevaImpresora.Controls.Add(this.CombPuesto);
             this.NuevaImpresora.Controls.Add(this.label7);
             this.NuevaImpresora.Controls.Add(this.comboBox4);
@@ -371,7 +375,7 @@ namespace SistemaToners
             // CartuchoContinuo
             // 
             this.CartuchoContinuo.AutoSize = true;
-            this.CartuchoContinuo.Location = new System.Drawing.Point(18, 148);
+            this.CartuchoContinuo.Location = new System.Drawing.Point(78, 154);
             this.CartuchoContinuo.Name = "CartuchoContinuo";
             this.CartuchoContinuo.Size = new System.Drawing.Size(129, 19);
             this.CartuchoContinuo.TabIndex = 14;
@@ -382,7 +386,7 @@ namespace SistemaToners
             // Toner
             // 
             this.Toner.AutoSize = true;
-            this.Toner.Location = new System.Drawing.Point(18, 123);
+            this.Toner.Location = new System.Drawing.Point(18, 152);
             this.Toner.Name = "Toner";
             this.Toner.Size = new System.Drawing.Size(54, 19);
             this.Toner.TabIndex = 13;
@@ -430,28 +434,20 @@ namespace SistemaToners
             // TTinta
             // 
             this.TTinta.AutoSize = true;
-            this.TTinta.Location = new System.Drawing.Point(3, 105);
+            this.TTinta.Location = new System.Drawing.Point(3, 130);
             this.TTinta.Name = "TTinta";
             this.TTinta.Size = new System.Drawing.Size(73, 15);
             this.TTinta.TabIndex = 8;
             this.TTinta.Text = "Tipo de tinta";
             // 
-            // CombMarca
+            // marca
             // 
-            this.CombMarca.FormattingEnabled = true;
-            this.CombMarca.Location = new System.Drawing.Point(123, 69);
-            this.CombMarca.Name = "CombMarca";
-            this.CombMarca.Size = new System.Drawing.Size(121, 23);
-            this.CombMarca.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 72);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 15);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Seleccione la marca";
+            this.marca.AutoSize = true;
+            this.marca.Location = new System.Drawing.Point(3, 75);
+            this.marca.Name = "marca";
+            this.marca.Size = new System.Drawing.Size(93, 15);
+            this.marca.TabIndex = 6;
+            this.marca.Text = "Ingrese la marca";
             // 
             // CombPuesto
             // 
@@ -500,6 +496,29 @@ namespace SistemaToners
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 23);
             this.textBox1.TabIndex = 21;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(123, 72);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(121, 23);
+            this.textBox3.TabIndex = 22;
+            // 
+            // modelo
+            // 
+            this.modelo.Location = new System.Drawing.Point(123, 102);
+            this.modelo.Name = "modelo";
+            this.modelo.Size = new System.Drawing.Size(121, 23);
+            this.modelo.TabIndex = 23;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 105);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 15);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Ingrese el modelo";
             // 
             // Sistoners
             // 
@@ -558,8 +577,7 @@ namespace SistemaToners
         private System.Windows.Forms.Label TipoConexion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label TTinta;
-        private System.Windows.Forms.ComboBox CombMarca;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label marca;
         private System.Windows.Forms.ComboBox CombPuesto;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox4;
@@ -573,6 +591,9 @@ namespace SistemaToners
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button Cancelar;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox modelo;
+        private System.Windows.Forms.Label label2;
     }
 }
 
