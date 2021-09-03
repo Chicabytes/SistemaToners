@@ -73,6 +73,7 @@ namespace SistemaToners
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.MainMenu.SuspendLayout();
             this.Gestion.SuspendLayout();
             this.NuevaImpresora.SuspendLayout();
@@ -142,20 +143,20 @@ namespace SistemaToners
             // nuevaImpresoraToolStripMenuItem
             // 
             this.nuevaImpresoraToolStripMenuItem.Name = "nuevaImpresoraToolStripMenuItem";
-            this.nuevaImpresoraToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.nuevaImpresoraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevaImpresoraToolStripMenuItem.Text = "Nueva Impresora";
             this.nuevaImpresoraToolStripMenuItem.Click += new System.EventHandler(this.nuevaImpresoraToolStripMenuItem_Click);
             // 
             // editarImpresoraToolStripMenuItem
             // 
             this.editarImpresoraToolStripMenuItem.Name = "editarImpresoraToolStripMenuItem";
-            this.editarImpresoraToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.editarImpresoraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editarImpresoraToolStripMenuItem.Text = "Editar Impresora";
             // 
             // listaImpresorasToolStripMenuItem
             // 
             this.listaImpresorasToolStripMenuItem.Name = "listaImpresorasToolStripMenuItem";
-            this.listaImpresorasToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.listaImpresorasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listaImpresorasToolStripMenuItem.Text = "Lista Impresoras";
             this.listaImpresorasToolStripMenuItem.Click += new System.EventHandler(this.listaImpresorasToolStripMenuItem_Click);
             // 
@@ -294,6 +295,7 @@ namespace SistemaToners
             // NuevaImpresora
             // 
             this.NuevaImpresora.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.NuevaImpresora.Controls.Add(this.textBox1);
             this.NuevaImpresora.Controls.Add(this.Cancelar);
             this.NuevaImpresora.Controls.Add(this.NiP);
             this.NuevaImpresora.Controls.Add(this.IP);
@@ -492,6 +494,13 @@ namespace SistemaToners
             this.textBox2.Size = new System.Drawing.Size(100, 23);
             this.textBox2.TabIndex = 0;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(123, 293);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 23);
+            this.textBox1.TabIndex = 21;
+            // 
             // Sistoners
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -563,6 +572,7 @@ namespace SistemaToners
         private System.Windows.Forms.TextBox numIp;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button Cancelar;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
