@@ -84,5 +84,11 @@ namespace SistemaToners
                 Close();
             }
         }
+
+        private void listaAreasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListaAreas listaareas = new ListaAreas();
+            listaareas.Show();
+        }
     }
 }

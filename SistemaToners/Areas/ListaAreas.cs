@@ -19,7 +19,7 @@ namespace SistemaToners.Areas
             List<AreayPuesto> ListaPuestos = nuevaConexion.ListaPuesto();
             foreach (var Puesto in ListaPuestos)
             {
-                ListArea.Items.Add(Puesto);
+                ListArea.Items.Add(Puesto.Area_puesto.Nombre_area.ToString());
             }
         }
 

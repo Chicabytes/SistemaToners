@@ -89,14 +89,14 @@ namespace SistemaToners.Areas
             // 
             this.BoxBuscar.Location = new System.Drawing.Point(12, 12);
             this.BoxBuscar.Name = "BoxBuscar";
-            this.BoxBuscar.Size = new System.Drawing.Size(249, 23);
+            this.BoxBuscar.Size = new System.Drawing.Size(331, 23);
             this.BoxBuscar.TabIndex = 5;
             // 
             // Buscar
             // 
-            this.Buscar.Location = new System.Drawing.Point(267, 11);
+            this.Buscar.Location = new System.Drawing.Point(265, 12);
             this.Buscar.Name = "Buscar";
-            this.Buscar.Size = new System.Drawing.Size(75, 23);
+            this.Buscar.Size = new System.Drawing.Size(78, 23);
             this.Buscar.TabIndex = 6;
             this.Buscar.Text = "Buscar";
             this.Buscar.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@ namespace SistemaToners.Areas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 407);
+            this.ClientSize = new System.Drawing.Size(355, 407);
             this.Controls.Add(this.Buscar);
             this.Controls.Add(this.BoxBuscar);
             this.Controls.Add(this.Editar);
